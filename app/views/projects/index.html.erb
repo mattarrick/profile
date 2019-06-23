@@ -1,1 +1,8 @@
-<h1>Matt Arrick</h1>
+<% @projects.each do |project| %>
+  <div>
+    <h1><%= project.title %></h1><br />
+    <i><%= project.description %></i><br />
+  </div>
+
+  <hr />
+<% end %>
