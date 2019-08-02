@@ -2,4 +2,19 @@
   <h1><%= @project.title %></h1>
   <br /><br />
   <p><%= @project.description %></p>
+
+  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  
+  <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+    <ul class="navbar-nav mr-auto mt-2 mt-md-0">
+      <li class="nav-item">
+        <%= link_to  edit_project_path, class: 'nav-link' do %>
+          <i class="fa fa-edit"></i>
+          Edit Project
+        <% end %>
+      </li>
+    </ul>
+  </div>
 </div>  
