@@ -1,7 +1,6 @@
 <% @projects.each do |project| %>
   <div class="booyah-box col-10 offset-1">
     <h1><%= link_to project.title, project_path(project) %></h1><br />
-    <h1><%= project.title %></h1><br />
     <i><%= project.description %></i><br />
 
   </div>
