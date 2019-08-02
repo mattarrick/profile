@@ -2,6 +2,7 @@
   <h1><%= @project.title %></h1>
   <br /><br />
   <p><%= @project.description %></p>
+  <%= image_tag @project.image.url, class: 'img-fluid' %>
 
   <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
