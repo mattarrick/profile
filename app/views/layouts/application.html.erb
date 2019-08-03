@@ -14,8 +14,8 @@
     <nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse">
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
-      </button>
-      
+      </button>   
+
       <%= link_to 'Matt Arrick', root_path, class: 'navbar-brand' %>
 
       <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
@@ -32,4 +32,35 @@
 
     <%= yield %>
   </body>
+
+  <div id="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-sm-3">
+            <b>Contact</b>
+            <br />
+            mattarrick@gmail.com
+            <br />
+            40 Lakewood Dr.
+            <br />
+            Woodland Park, CO 80863
+          </div>
+          <div class="col-12 col-sm-3 social">
+            <b>Social</b>
+            <br />
+            <br />
+            
+            <%= link_to 'http://github.com/mattarrick' do %>
+              <span class="fa fa-github-square fa-2x social-button"></span>
+            <% end %>
+            <%= link_to 'http://facebook.com/mattarrick' do %>
+              <span class="fa fa-facebook-square fa-2x social-button"></span>
+            <% end %>
+            <%= link_to 'http://twitter.com/mattarrick' do %>
+              <span class="fa fa-twitter-square fa-2x social-button"></span>
+            <% end %>
+          </div>
+        </div>
+      </div>
+    </div>
 </html>

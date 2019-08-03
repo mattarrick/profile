@@ -1,8 +1,15 @@
-<div class="booyah-box col-10 offset-1">
-  <h1><%= @project.title %></h1>
+<div class="booyah-box col-8 offset-2 text-center">
+  <h1>
+    <a href=<%= @project.address %> target=_blank><%= @project.title %></a>
+  </h1>
+
   <br /><br />
   <p><%= @project.description %></p>
-  <%= image_tag @project.image.url, class: 'img-fluid' %>
+
+  <div class="photo">
+    <%= image_tag @project.image.url, class: 'img-fluid' %>
+  </div>
+
 
   <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
